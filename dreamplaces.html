@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .dreamplaces{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .dreamplaces h1{
+        font-size: 36px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+        margin-bottom: 10px;
+    }
+    .reminder{
+        color:#0A3658;
+        text-align: center;
+        margin-bottom:25px;
+    }
+    .content{
+        text-align: center;
+        
+    }
+
+    .content img{
+        border-radius: 10px;
+        box-shadow: 0 0 10px #3B6064;
+    }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Dream Places</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="dreamplaces">
+        <h1>Beyond the Horizon</h1>
+        <p class="reminder">Click the countries on the map to see my Dream Places.<br>For small countries, Click the Pin.</p>
+        <div class="content">
+            <img src="asia shi.png" alt="" usemap="#asiamap">
+            <map name="asiamap">
+                <area shape="circle" coords="619, 500, 13.5" href="singapore.html" target="display" alt="Singapore Mapping" title="Singapore">
+                <area shape="poly" coords="567, 480, 560, 489, 565, 456, 573, 442, 571, 424, 
+                560, 415, 569, 404, 558, 338, 568, 373, 578, 367, 588, 376, 592, 392, 616, 388, 624, 
+                399, 628, 419, 607, 425, 602, 438, 602, 445, 588, 439, 581, 430, 
+                576, 452, 576, 469, 582, 478, 584, 486, 594, 497, 581, 493, 576, 496, 578, 489, 572, 
+                488, 567, 480" href="thailand.html" target="display" alt="Thailand Mapping" title="Thailand">
+                <area shape="circle" coords="708, 306, 12.5" href="hongkong.html" target="display" alt="Hong Kong Mapping" title="Hong Kong">
+                <area shape="rect" coords="819, 198, 838, 232" href="southkorea.html" target="display" alt="South Korea Mapping" title="South Korea">
+                <area shape="poly" coords="954, 119, 959, 135, 953, 144, 942, 140, 936, 151, 941, 168, 928, 172, 938, 180, 934,
+                 196, 913, 209, 908, 206, 908, 215, 902, 218, 903, 224, 891, 222, 884, 226, 883, 222, 872, 226, 868, 230, 859,
+                234, 849, 245, 848, 255, 857, 266, 864, 251, 877, 249, 883, 242, 902, 240, 910, 226, 919, 227, 925, 221, 929,
+                229, 932, 222, 936,
+                 226, 942, 216, 940, 209, 946, 203, 945, 195, 954, 186, 948, 154, 969, 149, 974, 134, 954, 119" href="japan.html" target="display" alt="Japan Mapping" title="Japan">
+            </map>
+        </div>
+    </section>
+</body>
+</html>

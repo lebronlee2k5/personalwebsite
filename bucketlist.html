@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket List</title>
+    <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .bucketlist{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .bucketlist h1{
+        font-size: 36px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+        margin-bottom: 30px;
+    }
+    .content{
+        width: 90%;
+        max-width: 750px;
+        background: repeating-linear-gradient(#C9E4CA, #C9E4CA 24px, #7a7a7a 25px);
+        border-left: 3px solid #55828B;
+        padding: 20px;
+        font-family: Tahoma, sans-serif;
+        font-size: 18px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #3B6064;
+        line-height: 25px;
+        text-align: center;
+    }
+    .content ul{
+        list-style-type: none;
+        padding-bottom: 10px;
+    }
+    .content ul li{
+        font-size: 18px;
+        font-family: Georgia, serif;
+        color: #364958;
+        text-align: left;
+        font-weight: bold;
+    }
+    .content ul li p{
+        font-family: Tahoma, sans-serif;
+        font-size: 16px;
+        text-indent: 30px;
+        text-align: left;
+        color: #364958;
+        font-weight: normal;
+    }
+    .buttons a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+    }
+    .buttons a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Bucket List</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="bucketlist">
+        <h1 id="title">My Bucket List</h1>
+        <div class="content">
+            <ul>
+                <li>Learn to play guitar
+                    <p>Since childhoold I want to learn how to play guitar, but I'm too lazy to learn it.</p>
+                </li>
+                <li>Graduate College
+                    <p>I want to graduate college so my mother can retire from working abroad.</p>
+                </li>
+                <li>Secure a stable job with high salary
+                    <p>After graduating college I want to secure a job so that I can repay my mother's sacrifices.</p>
+                </li>
+                <li>Buy House and Lot
+                    <p>Owning a house and lot is on my bucket list because it represents a major life achievement and financial stability. It’s a dream of mine to have a place to call my own, where I can feel secure and build lasting memories with my loved ones.</p>
+                </li>
+                <li>See My Favorite Valorant Team Play Live
+                    <p>Watching my favorite team in action, feeling the crowd’s energy, and cheering them on would be an unforgettable thrill.</p>
+                </li>
+                <li>Travel to My Dream Places
+                    <p>After I solidified my career, I want to travel to my dream places before I ran out of time.</p>
+                </li>
+                <li>Try Mountain Hiking with my Friends
+                    <p>I want to try hiking at least once in my life, I want to be connected with nature.</p>
+                </li>
+                <li>Go Stargazing in a Remote Location with my Friends
+                    <p>I want to lie under a sky full of stars with them, away from city lights, and experience the beauty of the universe.</p>
+                </li>
+                <li>Meet the love of my life
+                    <p>As a man, I want to experience care, love, and attention from a woman that I love.</p>
+                </li>
+                <li>Go on a Camping trip with the love of my life
+                    <p>Going on a camping trip with your love feels romantic.  Sitting by the crackling campfire, sharing stories, and feeling the warmth of each other's presence makes the night even more special. </p>
+                </li>
+            </ul>
+        </div>
+        <div class="buttons" style="margin-top: 30px; text-align: right;">
+            <a href="#title">Go Top</a>
+        </div>
+    </section>
+</body>
+</html>

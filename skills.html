@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Skills, Hobbies and Interest</title>
+    <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    sup, abbr{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .biography{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .title h1{
+        text-align: center;
+        font-family: Georgia, serif;
+        color: #0A3658;
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 50px;
+    }
+    .buttons a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+    }
+    .buttons a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    .skills{
+        padding: 20px 50px;
+        max-width: 100%;
+        background-color: #C9E4CA;
+        color: #364958;
+        box-shadow: 0 0 15px #55828B;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    .skills h3{
+        font-family: Georgia, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .skillGallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .skillGallery img {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #87BBA2;
+        padding: 5px;
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+
+    .skillGallery img:hover {
+        width: 150px;
+        background-color: #55828B;
+        transform: scale(1.1);
+    }
+    .hobbies{
+        margin-top: 50px;
+        padding: 20px 50px;
+        max-width: 100%;
+        background-color: #C9E4CA;
+        color: #364958;
+        box-shadow: 0 0 15px #55828B;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    .hobbies h3{
+        font-family: Georgia, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .hobbiesGallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .hobbiesGallery img {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #87BBA2;
+        padding: 5px;
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+    .hobbiesGallery img:hover {
+        width: 250px;
+        background-color: #55828B;
+        transform: scale(1.1);
+    }
+    .interest{
+        margin-top: 50px;
+        padding: 20px 50px;
+        max-width: 100%;
+        background-color: #C9E4CA;
+        color: #364958;
+        box-shadow: 0 0 15px #55828B;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    .interest h3{
+        font-family: Georgia, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .interestGallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .interestGallery img {
+        width: 200px;
+        height: 250px;
+        border-radius: 5px;
+        background-color: #87BBA2;
+        padding: 5px;
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+    .interestGallery img:hover {
+        width: 250px;
+        background-color: #55828B;
+        transform: scale(1.1);
+    }
+    #gotopChildhood{
+        padding: 10px 10px;
+        background-color: #87BBA2;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    #gotopChildhood:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css">
+    <!--SETOSTA, LEBRON LEE-->
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#" title="SKILL, HOBBY AND INTEREST">My S,H,I</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a></li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="biography">
+
+        <div class="title">
+            <h1 id="Title">My Own Skills, Hobbies, and Interest</h1>
+        </div>
+        <div class="buttons">
+            <a href="#skills">My Skills</a>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#interest">My Interests</a>
+        </div>   
+        <div class="skills">
+            <h3 id="skills">Skills: The product of Experience</h3>
+            <div class="skillGallery">
+                <a href="Programming Language Logo.png" target="display"><img src="Programming Language Logo.png" alt="Programming Languages" title="Languages I used"></a>
+                <a href="Word Processing Logo.png" target="display"><img src="Word Processing Logo.png" alt="Word Processing Tools" title="Tools I am Using"></a>
+                <a href="Critical Thinking.png" target="display"><img src="Critical Thinking.png" alt="Critical Thinking Skill" title="My First Soft Skill"></a>
+                <a href="Time management.png" target="display"><img src="Time management.png" alt="Time Management Skill" title="My Second Soft Skill"></a>
+            </div>
+            <p>
+                <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; During my childhood, teenage, and college years, I have developed a skill set that I
+                could call a valuable asset.<sup>1</sup> I can say that I am proficient in using various programming language, Although not very
+                good yet and still learning.<sup>2</sup> I have experienced using different kind of programming language.<sup>3</sup>
+                When I was in my senior high school I took the strand <abbr title="Information Communications Technology">ICT</abbr> strand which includes 
+                different kind subjects.<sup>4</sup> Softwares and hardwares, including programming and basic computer repairs.<sup>5</sup>
+                My very first programming language I learned is <abbr title="HyperText Markup Language">HTML</abbr> and basic <abbr title="Cascading Style Sheets">CSS</abbr>
+                with a little bit of JavaScript.<sup>6</sup> Because of this experience, I developed skill that is useful for Web Development and Web Designing.<sup>7</sup>
+                In my freshman year, I further improved my problem solving & critical-thinking skills because the programming language we used at programming subject is Python and Java.<sup>8</sup> 
+                Which requires high problem solving & critical-thinking skills to understand and to provide the solution to the problem given by the professors.<sup>9</sup> 
+                I also improved my skills on using Word Processing applications, because of the different kinds of school works and activities.<sup>10</sup> I also learned
+                how to collaborate effectively with my group members during groupworks.<sup><b>11</b></sup> Which also improved my Teamwork and Communication skills.<sup>12</sup> 
+                While in college, I learned the most important skill to survive, which is the Adaptability of any situation and the Willingness to Learn new things.<sup>13</sup> 
+                There is also my Time management skill that allows me to finish my pending activities on time.<sup>14</sup> I belive when facing incredible challenges our skills shines brightly.<sup>15</sup> 
+                Talent is just a ingredient of Skills.<sup>16</sup> Improving our own skill set further would help us to achieve greater things.<sup>17</sup> Result is just a 
+                byproduct of what the skills could do.<sup>18</sup> That is why, I am continously working to enchance my skill sets to stay ahead in my field.<sup>19</sup> My dedication
+                and passion for what I do drive me to survive every challenges I face.<sup>20</sup>
+                </blockquote>
+            </p><br>
+            <div style="text-align: right;">
+            <a href="#Title" id="gotopChildhood">Go Top</a>
+            </div>
+        </div>
+        <div class="hobbies">
+            <h3 id="hobbies">Hobbies: The rest of a tired person</h3>
+            <div class="hobbiesGallery">
+                <a href="Valorant Hobby.jpg" target="display"><img src="Valorant Hobby.jpg" alt="Shooting Game" title="My Favorite Shooting Game"></a>
+                <a href="MLBB.jpeg" target="display"><img src="MLBB.jpeg" alt="MOBA Game" title="My Favorite MOBA Game"></a>
+                <a href="Manhwas.png" target="display"><img src="Manhwas.png" alt="Manhwas" title="My Favorite Manhwas"></a>
+                <a href="Cycling.jpg" target="display"><img src="Cycling.jpg" alt="Physical Hobby" title="My Physical Hobby"></a>
+            </div>
+            <p>
+            <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I have variety of hobbies that keep me engaged, help relax, and allow me to explore my self. <sup>1</sup> 
+                My favorite among all the hobbies I have is playing Online Games.<sup>2</sup> 
+                Whether it is a competitive or for fun games, I like playing Online Games because it helps me relieve my stress.<sup>3</sup>
+                When playing I feel like I am outside of the real world and free from all the stress of life.<sup>4</sup> 
+                Maybe it is just because I happened to born where technology excels the most. <sup>5</sup> 
+                I also love playing Online Games because it allows me to connect with my relatives and friends.<sup>6</sup> 
+                It also helps me explore my mind when it comes to programming.<sup>7</sup>
+                When I am playing Online Games I often wonder how do they create such game with good graphics and how hard it is to create such thing.<sup>8</sup>
+                In my free time, I am trying to create a functional game using the programming language that I learned in school.<sup>9</sup> 
+                Although it is hard, it is quite enjoyable for me.<sup>10</sup> I also enjoy reading manhwas, manhua, and manga.<sup>11</sup> 
+                Reading them gives me idea and makes my mind more creative.<sup>12</sup> 
+                Since most manhwas are digitally created, it makes me want to create one.<sup>13</sup>
+                But it requires high level of drawing skills and creative mind which are skills that I don't have so I never really tried creating one.<sup>14</sup> 
+                I also like watching reviews of new gadgets such as phones, laptops, and computer desktop.<sup>15</sup>
+                When I was in senior high school, Cycling is one of my hobbies.<sup>16</sup> 
+                As it gives me a sense of freedom and adventure, Although sometimes it is scary because highways have many trucks and cars.<sup>17</sup>
+                I also love spending my free time with my friends and families.<sup>18</sup> Because of my love of spending free time with them, I often organize
+                small gathering with them.<sup>19</sup> My hobbies help me maintain a balanced lifestyle, keep me motivated in different aspects of life and make my mind rest even in the most stressful part of my life.<sup>20</sup>
+                </blockquote>  
+            </p><br>
+            <div style="text-align: right;">
+                <a href="#Title" id="gotopChildhood">Go Top</a>
+            </div>
+        </div>
+        <div class="interest">
+            <h3 id="interest">Interest: My Passion for Technology, Gaming, and Exploration</h3>
+            <div class="interestGallery">
+                <a href="Interest Photos/Technology.jpeg" target="display"><img src="Interest Photos/Technology.jpeg" alt="Technology" title="Technology"></a>
+                <a href="Interest Photos/Gaming.jpg" target="display"><img src="Interest Photos/Gaming.jpg" alt="Gaming" title="Gaming"></a>
+                <a href="Interest Photos/Gaming.jpg" target="display"><img src="Interest Photos/CyberSecurity.jpg" alt="Cybersecurity" title="Cybersecurity"></a>
+                <a href="Interest Photos/Exploring.jpg" target="display"><img src="Interest Photos/Exploring.jpg" alt="Exploring" title="Exploring"></a>
+                
+            </div>
+            <p>
+                I have always been fascinated by technology, which is why I chose to study Information Technology in college.<sup>1</sup>
+                Being 19 years old, I am at a stage where I constantly seek knowledge and enjoy discovering new things.<sup>2</sup>
+                My curiosity drives me to explore different areas of IT, from programming to cybersecurity.<sup>3</sup> 
+                Aside from academics, I have a strong passion for online gaming.<sup>4</sup> 
+                Playing games allows me to unwind and connect with friends from different parts of the world.<sup>5</sup> 
+                I enjoy the thrill of competitive matches and the strategy involved in each game.<sup>6</sup> 
+                Exploring new games excites me because each one offers a unique experience and challenges. <sup>7</sup> 
+                I also like to experiment with game mechanics and understand how they are designed.<sup>8</sup> 
+                Beyond gaming, I enjoy learning new skills related to technology.<sup>9</sup> 
+                I have tried coding in different languages, and I find it satisfying when I successfully build something.<sup>10</sup> 
+                Web development is another area that interests me because creating functional websites feels rewarding.<sup>11</sup> 
+                I also explore hardware and software, trying to understand how systems work together.<sup>12</sup> 
+                Problem-solving is one of my strengths, and I like troubleshooting technical issues.<sup>13</sup> 
+                Learning about artificial intelligence and machine learning has also sparked my curiosity.<sup>14</sup> 
+                I believe that keeping up with new technology trends will benefit my future career.<sup>15</sup> 
+                In my free time, I watch tech-related videos and tutorials to expand my knowledge.<sup>16</sup> 
+                I also enjoy reading about innovations that shape the world of IT.<sup>17</sup> 
+                Sometimes, I experiment with different software and applications to see what they can do.<sup>18</sup> 
+                Aside from technology, I like to explore new places and try new food.<sup>19</sup> 
+                Experiencing different cultures and traditions is something I look forward to in the future.<sup>20</sup> 
+                Being open to new experiences allows me to grow as a person.<sup>21</sup> 
+                I believe that my love for technology and exploration will help me achieve great things.<sup>22</sup> 
+                My goal is to continue learning and improving my skills so that I can contribute to the ever-evolving tech industry.<sup>23</sup>  
+            </p><br>
+            <div style="text-align: right;">
+            <a href="#Title" id="gotopChildhood">Go Top</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

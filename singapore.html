@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .singapore{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .singapore h1{
+        font-size: 36px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+        margin-bottom: 30px;
+    }
+    .singapore h2{
+        font-size: 26px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        background: #c9e4ca;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+        overflow: hidden;
+    }
+
+    .gallery img {
+        border-radius: 15px;
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .gallery img:hover{
+        padding: 0 0;
+        transform: scale(1.1);
+        background-color: #87bba2;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    .caption {
+        padding: 5px 5px 10px 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #364958;
+        text-align: justify;
+    }
+    .title{
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #364958;
+        text-align: center;
+    }
+    .direction{
+        padding: 5px 5px 10px 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #364958;
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Singapore</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="singapore">
+        <h1>Singapore Must Go Destinations</h1>
+        <h2>Marina Bay</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Singapore/Gardens by the Bay.jpg" target="image-frame"><img src="Singapore/Gardens by the Bay.jpg" alt="Gardens by the Bay"></a>
+                <p class="title">Gardens by the Bay</p>
+                <p class="caption">Famous for its Supertree Grove, Cloud Forest, and Flower Dome, this futuristic park blends nature and technology with stunning landscapes and nightly light shows.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the MRT to Bayfront Station (CE1/DT16), Exit B, and walk via the Dragonfly Bridge.</p>
+            </div>
+        
+            <div class="gallery-item">
+                <a href="Singapore/Marina Bay Sands SkyPark.jpg" target="image-frame"><img src="Singapore/Marina Bay Sands SkyPark.jpg" alt="Marina Bay Sands SkyPark"></a>
+                <p class="title">Marina Bay Sands SkyPark</p>
+                <p class="caption">The SkyPark offers breathtaking panoramic views of the Singapore skyline and is an architectural marvel.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the MRT to Bayfront Station (CE1/DT16), and follow signs to Marina Bay Sands.</p>
+            </div>
+
+            <div class="gallery-item">
+                <a href="Singapore/Merlion Park.jpg" target="image-frame"><img src="Singapore/Merlion Park.jpg" alt="Merlion Park"></a>
+                <p class="title">Merlion Park</p>
+                <p class="caption">A must-see iconic statue that represents Singapore’s origins as a fishing village. Great for waterfront views and photo opportunities.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the MRT to Raffles Place Station (EW14/NS26), Exit H, and walk along Fullerton Road.</p>
+            </div>
+        </div>
+        <h2>Sentosa Island</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Singapore/Universal Studios Singapore.jpg" target="image-frame"><img src="Singapore/Universal Studios Singapore.jpg" alt="Universal Studios Singapore"></a>
+                <p class="title">Universal Studios Singapore</p>
+                <p class="caption">A world-class theme park with thrilling rides and attractions based on blockbuster movies.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the MRT to HarbourFront Station (NE1/CC29), then take the Sentosa Express monorail to Waterfront Station.</p>
+            </div>
+            <div class="gallery-item">
+                <a href="Singapore/S.E.A Aquarium.jpg" target="image-frame"><img src="Singapore/S.E.A Aquarium.jpg" alt="S.E.A. Aquarium"></a>
+                <p class="title">S.E.A. Aquarium</p>
+                <p class="caption">One of the world's largest aquariums, home to 100,000 marine animals across 50 habitats.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the Sentosa Express monorail to Waterfront Station from HarbourFront MRT (NE1/CC29).</p>
+            </div>
+            <div class="gallery-item">
+                <a href="Singapore/Adventure Cove Waterpark.jpg" target="image-frame"><img src="Singapore/Adventure Cove Waterpark.jpg" alt="Adventure Cove Waterpark"></a>
+                <p class="title">Adventure Cove Waterpark</p>
+                <p class="caption">A thrilling water park featuring high-speed slides, wave pools, and snorkeling with tropical fish.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the Sentosa Express monorail to Waterfront Station from HarbourFront MRT.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

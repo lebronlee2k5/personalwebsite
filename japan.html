@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .japan{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .japan h1{
+        font-size: 36px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+        margin-bottom: 30px;
+    }
+    .japan h2{
+        font-size: 26px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        background: #c9e4ca;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+        overflow: hidden;
+    }
+
+    .gallery img {
+        border-radius: 15px;
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .gallery img:hover{
+        padding: 0 0;
+        transform: scale(1.1);
+        background-color: #87bba2;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    .caption {
+        padding: 5px 5px 10px 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #364958;
+        text-align: justify;
+    }
+    .title{
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #364958;
+        text-align: center;
+    }
+    .direction{
+        padding: 5px 5px 10px 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #364958;
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Japan</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="japan">
+        <h1>Japan Must Go Destinations</h1>
+        <h2>Tokyo</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Japan/Akihabara.jpg" target="image-frame"><img src="Japan/Akihabara.jpg" alt="Akihabara"></a>
+                <p class="title">Akihabara</p>
+                <p class="caption">As an Anime Fan, I want to experience the Anime Culture in Japan.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the JR Tokaido Shinkansen bullet train from Tokyo Station to Utsunomiya Station, 
+                    then transfer to the JR Tohoku Line to Akihabara Station. 
+                </p>
+            </div>
+        
+
+            <div class="gallery-item">
+                <a href="Japan/Tokyo Tower.jpg" target="image-frame"><img src="Japan/Tokyo Tower.jpg" alt="Tokyo Tower"></a>
+                <p class="title">Tokyo Tower</p>
+                <p class="caption"> I want to see the Tokyo Tower lights up beautifully at night.</p>
+                <p class="direction"><b>How to get there:</b><br>Several bus companies operate 
+                    services from various points in Tokyo to the Tokyo Skytree area.</p>
+            </div>
+
+            <div class="gallery-item">
+                <a href="Japan/Tokyo Disneyland.jpg" target="image-frame"><img src="Japan/Tokyo Disneyland.jpg" alt="Tokyo Disneyland"></a>
+                <p class="title">Tokyo Disneyland</p>
+                <p class="caption">I want to try Disneyland theme park atleast once in my life.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the JR Nambu Line from Tokyo Station to Maihara Station, 
+                    then transfer to the Keio Line to Shinjuku Station. From there, 
+                    take the Odakyu Line to Karakawa Station, and finally take the Resort Liner to Tokyo Disney Resort.</p>
+            </div>
+        </div>
+        <h2>Kyoto Prefecture</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Japan/Fushimi Inari Taisha.jpg" target="image-frame"><img src="Japan/Fushimi Inari Taisha.jpg" alt="Fushimi Inari Taisha"></a>  
+                <p class="title">Fushimi Inari Taisha</p>
+                <p class="caption">I want to experience this most visited shrine in kyoto, 
+                since they said it was magical.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the JR Nambu Line to Kurume Station.<br>Transfer to the JR Kyushu Shinkansen to Hakata Station.
+                <br>Take the JR Saga Line to Saga Station.<br>Transfer to the JR Nara Line to Fushimi Inari Station.</p>
+            </div>
+            <div class="gallery-item">
+                <a href="Japan/Kiyomizu-dera Temple.jpg" target="image-frame"><img src="Japan/Kiyomizu-dera Temple.jpg" alt="Kiyomizu-dera"></a>
+                <p class="title">Kiyomizu-dera Temple</p>
+                <p class="caption">I want to Kiyomizu-dera Temple because it’s 
+                    historically significant, provides cultural experiences, 
+                    and creates a peaceful, spiritual atmosphere.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the JR Tokaido Shinkansen bullet train from Tokyo Station to Kyoto Station, 
+                    then take a local train or bus to Kiyomizu-dera.</p>
+            </div>
+            <div class="gallery-item">
+                <a href="Japan/Arashiyama Bamboo Grove.jpg" target="image-frame"><img src="Japan/Arashiyama Bamboo Grove.jpg" alt="Arashiyama Bamboo Grove"></a>
+                <p class="title">Arashiyama Bamboo Grove</p>
+                <p class="caption">I want to visit Arashiyama Bamboo Grove for its serene beauty, 
+                the unique experience of walking through towering bamboo stalks,
+                and the scenery that offers a escape from the city.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the Tokyo Metro Hibiya Line from Tokyo Station to Kyoto Station, then transfer to the Keihan Main Line to Arashiyama Station.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

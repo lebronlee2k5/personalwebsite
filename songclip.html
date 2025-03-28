@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundscape</title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #87bba2;
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #c9e4ca;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #3B6064;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #364958;
+            font-size: 18px;
+            display: block;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #3B6064;
+            padding: 15px;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        .logo {
+            font-family: Georgia, serif;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .logo a {
+            font-size: 32px;
+            color: #364958;
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-family: Georgia, serif;
+            color: #364958;
+        }
+
+        /* Grid Layout */
+        .song-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .song {
+            background: #c9e4ca;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .song img {
+            padding: 2px;
+            background-color: #87bba2;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .song img:hover {
+            transform: scale(1.05);
+            background-color: #3B6064;
+        }
+
+        .song-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #364958;
+        }
+
+        .song-info strong {
+            display: block;
+            font-size: 16px;
+            color: #3B6064;
+        }
+
+        /* Audio Player Styling */
+        audio {
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">My Media</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="media.html"><i class="fa-solid fa-arrow-circle-left"></i><span> Back</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h1>My Favorite Songs</h1>
+        <p>Click an image to view it in full size.</p>
+
+        <!-- Song Grid -->
+        <div class="song-grid">
+            <!-- Song Item 1 -->
+            <div class="song">
+                <a href="Album Covers/EverySummertime Cover.jpg" target="display">
+                    <img src="Album Covers/EverySummertime Cover.jpg" alt="Song 1">
+                </a>
+                <div class="song-info">
+                    <strong>Every Summertime</strong>
+                    <p>Artist: NIKI</p>
+                    <p>Single</p>
+                </div>
+                <audio controls>
+                    <source src="audio/every_summertime.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song Item 2 -->
+            <div class="song">
+                <a href="Album Covers/Starboy.jpg" target="display">
+                    <img src="Album Covers/Starboy.jpg" alt="Song 2">
+                </a>
+                <div class="song-info">
+                    <strong>Die For You</strong>
+                    <p>The Weeknd</p>
+                    <p>Album: Starboy</p>
+                </div>
+                <audio controls>
+                    <source src="audio/die_for_you.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song Item 3 -->
+            <div class="song">
+                <a href="Album Covers/Lover.jpg" target="display">
+                    <img src="Album Covers/Lover.jpg" alt="Song 3">
+                </a>
+                <div class="song-info">
+                    <strong>Lover</strong>
+                    <p>Taylor Swift</p>
+                    <p>Album: Lover</p>
+                </div>
+                <audio controls>
+                    <source src="audio/lover.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song Item 4 -->
+            <div class="song">
+                <a href="Album Covers/Divide.jpg" target="display">
+                    <img src="Album Covers/Divide.jpg" alt="Song 4">
+                </a>
+                <div class="song-info">
+                    <strong>Shape of You</strong>
+                    <p>Ed Sheeran</p>
+                    <p>Album: ÷(divide)</p>
+                </div>
+                <audio controls>
+                    <source src="audio/shape_of_you.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song Item 5 -->
+            <div class="song">
+                <a href="Album Covers/Story of my Life.jpg" target="display">
+                    <img src="Album Covers/Story of my Life.jpg" alt="Song 5">
+                </a>
+                <div class="song-info">
+                    <strong>Story of My Life</strong>
+                    <p>One Direction</p>
+                    <p>Album: Midnight Memories</p>
+                </div>
+                <audio controls>
+                    <source src="audio/story_of_my_life.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

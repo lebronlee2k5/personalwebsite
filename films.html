@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Files</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #87bba2;
+        margin: 0;
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh; 
+        background-color:#c9e4ca;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #364958;
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+        transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #3B6064;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+        
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+        }
+    
+    .logo a{   
+        font-size: 32px;  
+        color: #364958 ;  
+        text-decoration: none;
+    }
+
+    .content {
+        margin-left: 260px;
+        padding: 20px;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .content h1{
+        font-family: Georgia, serif;
+        color: #0A3658;
+    }
+    #reminder{
+        color: #0A3658;
+    }
+
+    .movie-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .movie {
+        background: #c9e4ca;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .movie img {
+        padding: 2px;
+        background-color:#87bba2 ;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .movie img:hover {
+        transform: scale(1.05);
+        background-color: #3B6064;
+    }
+
+    .movie-info {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #364958;
+    }
+
+    .movie-info strong {
+        display: block;
+        font-size: 16px;
+        color: #3B6064;
+    }
+    .buttons{
+        display: flex;
+        justify-content: right;
+        gap: 100px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .buttons a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+    }
+    .buttons a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    .caption{
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">My Media</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                    <span>Home</span></a>
+                </li>
+                <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                    <span>Biography</span></a></li>
+                <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                    <span>Skills</span></a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                    <span>Gallery</span></a></li>
+                <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                    <span>Media</span></a></li>
+                <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                    <span>Resume</span></a></li>
+                <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                    <span> Dream Places</span></a></li>
+                <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                    <span> Bucket List</span></a></li>
+                <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                    <span> Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>My Favorite Series/Movies</h1>
+        <p id="reminder">Click an image to watch the trailer.</p>
+
+        <div class="movie-grid">
+
+            <div class="movie">
+                <a href="Trailer/Haikyu!!.mp4" target="display">
+                    <img src="Movie Album Cover/Haikyuu.jpg" alt="Song 1">
+                </a>
+                <div class="movie-info">
+                    <strong>Haikyu!!</strong>
+                    <p>Genre: School, Team Sports</p>
+                    <p class="caption">Ever since having witnessed the "Little Giant" and his astonishing skills on the volleyball court, Shouyou Hinata has been bewitched by the dynamic nature of the sport. Even though his attempt to make his debut as a volleyball regular during a middle school tournament went up in flames, he longs to prove that his less-than-impressive height ceases to be a hindrance in the face of his sheer will and perseverance.</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="Trailer/Horimiya.mp4" target="display">
+                    <img src="Movie Album Cover/Horimiya.jpg" alt="Song 2">
+                </a>
+                <div class="movie-info">
+                    <strong>Horimiya</strong>
+                    <p>Genre: Romance-Comedy </p>
+                    <p class="caption">On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare.</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="Trailer/Classroom of the Elite.mp4" target="display">
+                    <img src="Movie Album Cover/Classroom of the Elite.jpg" alt="Song 3">
+                </a>
+                <div class="movie-info">
+                    <strong>Classroom of the Elite</strong>
+                    <p>Genre: School, Action</p>
+                    <p class="caption">On the surface, Koudo Ikusei Senior High School is a utopia. The students enjoy an unparalleled amount of freedom, and it is ranked highly in Japan. However, the reality is less than ideal. Four classes, A through D, are ranked in order of merit, and only the top classes receive favorable treatment.</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="Trailer/Dragonball Super.mp4" target="display">
+                    <img src="Movie Album Cover/Dragon Ball.jpg" alt="Song 4">
+                </a>
+                <div class="movie-info">
+                    <strong>Dragon Ball </strong>
+                    <p>Genre: Action</p>
+                    <p class="caption">Gokuu Son is a young boy who lives in the woods all alone—that is, until a girl named Bulma runs into him in her search for a set of magical objects called the "Dragon Balls."</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="Trailer/Solo Leveling.mp4" target="display">
+                    <img src="Movie Album Cover/Solo Leveling.jpg" alt="Song 5">
+                </a>
+                <div class="movie-info">
+                    <strong>Solo Leveling</strong>
+                    <p>Genre: Action</p>
+                    <p class="caption">Humanity was caught at a precipice a decade ago when the first gates—portals linked with other dimensions that harbor monsters immune to conventional weaponry—emerged around the world. Alongside the appearance of the gates, various humans were transformed into hunters and bestowed superhuman abilities. Responsible for entering the gates and clearing the dungeons within, many hunters chose to form guilds to secure their livelihoods.</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="Trailer/Your Lie in April.mp4" target="display">
+                    <img src="Movie Album Cover/Your lie in April.jpg" alt="Song 6">
+                </a>
+                <div class="movie-info">
+                    <strong>Your Lie in April</strong>
+                    <p>Genre: School, Romance-Comedy, Drama</p>
+                    <p class="caption">Kousei Arima is a child prodigy known as the "Human Metronome" for playing the piano with precision and perfection. Guided by a strict mother and rigorous training, Kousei dominates every competition he enters, earning the admiration of his musical peers and praise from audiences. When his mother suddenly passes away, the subsequent trauma makes him unable to hear the sound of a piano, and he never takes the stage thereafter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="media.html"><i class="fa-solid fa-arrow-circle-left"></i><span> Back</span></a>
+        </div>
+    </main>
+
+</body>
+</html>

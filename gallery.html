@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style type="text/css">
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #87bba2;
+        margin: 0;
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color:#c9e4ca;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #364958;
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+        transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #3B6064;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+
+    .gallery-container {
+        margin-left: 250px;
+        padding: 20px;
+        width: 100%;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 20px;
+    }
+    .buttons a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+    }
+    .buttons a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    .gallery-container h2 {
+        text-align: center;
+        color: #0A3658;
+        font-family: Georgia, serif;
+        font-size: 36px;
+    }
+
+    .gallery {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .gallery:target {
+        display: block;
+    }
+
+    #me {
+        display: block;
+    }
+
+    .gallery:target ~ #me {
+        display: none;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #c9e4ca;
+        box-shadow: 0 0 15px #55828B;
+    }
+
+    .images img {
+        width: 100%;
+        height: 250px;
+        padding: 3px;
+        border-radius: 10px;
+        background-color: #3B6064;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .images img:hover {
+        transform: scale(1.1);
+        background-color: #87bba2;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Photo Dump</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                    <span>Home</span></a>
+                </li>
+                <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                    <span>Biography</span></a></li>
+                <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                    <span>Skills</span></a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                    <span>Gallery</span></a></li>
+                <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                    <span>Media</span></a></li>
+                <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                    <span>Resume</span></a></li>
+                <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                    <span> Dream Places</span></a></li>
+                <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                    <span> Bucket List</span></a></li>
+                <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                    <span> Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <h2 class="defaultMessage" id="defaultMessage">SELECT CATEGORY</h2>
+        <div class="buttons">
+            <a href="#friends">Friends</a>
+            <a href="#nature">Nature</a>
+            <a href="#family">Family</a> 
+        </div>
+        <div id="me" class="gallery">
+            <h2>Me:</h2>
+            <div class="images">
+                <a href="Childhood1.jpg" target="display"><img src="Childhood1.jpg" alt="my first webcam picture" title="my first webcam picture"></a>
+                <a href="Childhood2.jpg" target="display"><img src="Childhood2.jpg" alt="my first school christmas party" title="my first school christmas party"></a>
+                <a href="Childhood3.jpg" target="display"><img src="Childhood3.jpg" alt="taken when I was 8 y/o" title="taken when I was 8 y/o"></a>
+                <a href="Childhood4.jpg" target="display"><img src="Childhood4.jpg" alt="my first visita iglesia" title="my first visita iglesia"></a>
+                <a href="Teen1.jpg" target="display"><img src="Teen1.jpg" alt="Grade 8 Photo" title="This was taken when I was in Gr. 8"></a>
+                <a href="Teen2.jpg" target="display"><img src="Teen2.jpg" alt="Grade 7 Photo" title="This is me when I was Gr.7"></a>
+                <a href="Teen3.jpg" target="display"><img src="Teen3.jpg" alt="Grade 7 Photo" title="This is taken in the chapel of my Junior High Scool"></a>
+                <a href="Teen4.jpg" target="display"><img src="Teen4.jpg" alt="Grade 9 Photo" title="Captured in Tagaytay"></a>
+                <a href="College1.jpg" target="display"><img src="College1.jpg" alt="1st Year College Photo" title="Playing Billiards"></a>
+                <a href="College2.jpg" target="display"><img src="College2.jpg" alt="1st Year College Photo" title="Family Outing"></a>
+                <a href="College3.jpg" target="display"><img src="College3.jpg" alt="1st Year COllege Photo" title="Sister's Wedding"></a>
+                <a href="College4.jpg" target="display"><img src="College4.jpg" alt="1st Year College Photo" title="Random Picture"></a>
+            </div>
+        </div>
+
+        <div id="friends" class="gallery">
+            <h2>Circle of Friends:</h2>
+            <div class="images">
+                <a href="Cof1.jpg" target="display"><img src="Cof1.jpg" alt="Senior High Friends" title="Foundation Week Group Photo"></a>
+                <a href="Cof2.jpg" target="display"><img src="Cof2.jpg" alt="Cousins/Friends" title="New Year Group Photo"></a>
+                <a href="Cof3.JPG" target="display"><img src="Cof3.JPG" alt="College Friends" title="Comssolympics"></a>
+                <a href="Cof4.jpg" target="display"><img src="Cof4.jpg" alt="Cousins/Friends" title="Sto.Nino Feast"></a>
+                <a href="Cof5.jpg" target="display"><img src="Cof5.jpg" alt="College Friends" title="First Photo Booth"></a>
+            </div>
+        </div>
+
+        <div id="nature" class="gallery">
+            <h2>Serenity:</h2>
+            <div class="images">
+                <a href="Nature1.jpg" target="display"><img src="Nature1.jpg" alt="Calming Photo" title="Falls"></a>
+                <a href="Nature2.jpg" target="display"><img src="Nature2.jpg" alt="Calming Photo" title="Green Nature"></a>
+                <a href="Nature3.jpg" target="display"><img src="Nature3.jpg" alt="Calming Photo" title="Sunset ft. Flowers"></a>
+                <a href="Nature4.jpg" target="display"><img src="Nature4.jpg" alt="Calming Photo" title="Rural Road"></a>
+                <a href="Nature5.jpg" target="display"><img src="Nature5.jpg" alt="Calming Photo" title="Lake"></a>
+            </div>
+        </div>
+
+        <div id="family" class="gallery">
+            <h2>Family:</h2>
+            <div class="images">
+                <a href="Family1.jpg" target="display"><img src="Family1.jpg" alt="Family Picture" title="2020 New Year Eve"></a>
+                <a href="Family2.jpg" target="display"><img src="Family2.jpg" alt="Family Picture" title="2020 Christmas Eve"></a>
+                <a href="Family3.jpg" target="display"><img src="Family3.jpg" alt="Family Picture" title="2022 New Year Eve"></a>
+                <a href="Family4.jpg" target="display"><img src="Family4.jpg" alt="Family Picture" title="Sister's Wedding"></a>
+                <a href="Family5.jpg" target="display"><img src="Family5.jpg" alt="Family Picture" title="Grandma's Birthday"></a>
+            </div>
+        </div>
+        <div class="buttons" style="margin-top: 30px; justify-content: right;">
+            <a href="#defaultMessage">Go Top</a>
+        </div>
+    </div>
+
+</body>
+</html>

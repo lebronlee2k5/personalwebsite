@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundscape</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #87bba2;
+        margin: 0;
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh; 
+        background-color:#c9e4ca;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #364958;
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+        transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #3B6064;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+
+    /* Main Content */
+    .content {
+        margin-left: 260px;
+        padding: 20px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .content h1{
+        font-family: Georgia, serif;
+        color: #0A3658;
+    }
+
+    #reminder{
+        color: #0A3658;
+    }
+
+    .genre-section h2 {
+        font-family: Georgia, serif;
+        font-size: 26px;
+        color: #0A3658;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .song-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .song {
+        background: #c9e4ca;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .song img {
+        padding: 2px;
+        background-color: #87bba2;
+        width: 300px;
+        height: 250px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .song img:hover {
+        transform: scale(1.05);
+        background-color: #3B6064;
+    }
+
+    .song-info {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #364958;
+    }
+
+    .song-info strong {
+        display: block;
+        font-size: 16px;
+        color: #3B6064;
+    }
+
+    audio {
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: right;
+        gap: 100px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .buttons a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+    }
+    .buttons a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">My Media</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                    <span>Home</span></a>
+                </li>
+                <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                    <span>Biography</span></a></li>
+                <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                    <span>Skills</span></a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                    <span>Gallery</span></a></li>
+                <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                    <span>Media</span></a></li>
+                <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                    <span>Resume</span></a></li>
+                <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                    <span> Dream Places</span></a></li>
+                <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                    <span> Bucket List</span></a></li>
+                <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                    <span> Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>My Favorite Songs</h1>
+        <p id="reminder">Click an image to view it in full size.</p>
+
+        <!-- R&B Section -->
+        <section class="genre-section">
+            <h2>R&B</h2>
+            <div class="song-grid">
+                <div class="song">
+                    <a href="Album Covers/EverySummertime Cover.jpg" target="display">
+                        <img src="Album Covers/EverySummertime Cover.jpg" alt="Song 1">
+                    </a>
+                    <audio controls>
+                        <source src="Song Clips/NIKI - Every Summertime.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="song-info">
+                        <strong>Every Summertime</strong>
+                        <p>Artist: NIKI</p>
+                        <p>Single</p>
+                        <p style="text-align: justify;">NIKI's "Every Summertime" is a nostalgic ode to a love that blossoms and endures with each passing summer, capturing the warmth and fleeting nature of youthful romance.</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <a href="Album Covers/Starboy.jpg" target="display">
+                        <img src="Album Covers/Starboy.jpg" alt="Song 2">
+                    </a>
+                    <audio controls>
+                        <source src="Song Clips/The Weeknd - DIE FOR YOU.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="song-info">
+                        <strong>Die For You</strong>
+                        <p>Artist: The Weeknd</p>
+                        <p>Album: Starboy</p>
+                        <p style="text-align: justify;">"Die For You" delves into the complexities of a passionate but strained relationship, where The Weeknd expresses a profound willingness to sacrifice for love despite ongoing struggles. The song captures the push and pull of intense devotion amidst emotional distance and communication breakdowns.</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <a href="Album Covers/Freudian.jpg" target="display">
+                        <img src="Album Covers/Freudian.jpg" alt="Song 3">
+                    </a>
+                    <audio controls>
+                        <source src="Song Clips/H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="song-info">
+                        <strong>Best Part</strong>
+                        <p>Artist: Daniel Caesar ft. H.E.R</p>
+                        <p>Album: Freudian</p>
+                        <p style="text-align: justify;">"Best Part" is a tender ballad celebrating the simple yet profound joy of being in love, emphasizing how a partner can bring out the best in someone. Daniel Caesar wrote the song as an expression of pure, unadulterated affection, aiming to capture the feeling of finding solace and completeness in another person.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pop Section -->
+        <section class="genre-section">
+            <h2>POP</h2>
+            <div class="song-grid">
+                <div class="song">
+                    <a href="Album Covers/Lover.jpg" target="display">
+                        <img src="Album Covers/Lover.jpg" alt="Song 3">
+                    </a>
+                    <audio controls>
+                        <source src="Song Clips/Taylor Swift - Lover.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="song-info">
+                        <strong>Lover</strong>
+                        <p>Artist: Taylor Swift</p>
+                        <p>Album: Lover</p>
+                        <p style="text-align: justify;">"Lover" is a heartfelt celebration of deep, committed love, capturing the warmth and intimacy of a lasting relationship. Taylor Swift wrote the song as an ode to a mature, enduring romance, emphasizing the comfort and security found in a loving partnership.</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <a href="Album Covers/Divide.jpg" target="display">
+                        <img src="Album Covers/Divide.jpg" alt="Song 4">
+                    </a>
+                    <audio controls>
+                        <source src="Song Clips/Ed Sheeran - Shape Of You.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="song-info">
+                        <strong>Shape of You</strong>
+                        <p>Artist: Ed Sheeran</p>
+                        <p>Album: ÷(divide)</p>
+                        <p style="text-align: justify;">"Shape of You" is a song about a casual, physical attraction that evolves into a deeper romantic connection, focusing on the initial spark and the growing intimacy.</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <a href="Album Covers/Story of my Life.jpg" target="display">
+                        <img src="Album Covers/Story of my Life.jpg" alt="Song 5">
+                    </a>
+                    <audio controls>
+                        <source src="Song Clips/One Direction - Story of My Life.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="song-info">
+                        <strong>Story of My Life</strong>
+                        <p>Artist: One Direction</p>
+                        <p>Album: Midnight Memories</p>
+                        <p style="text-align: justify;">"Story of My Life" by One Direction is about nostalgia, personal growth, and the passage of time, reflecting on memories with loved ones. The band recorded it as a heartfelt, acoustic-driven song to showcase a more mature and emotional side of their music, drawing from their own experiences and relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="buttons">
+            <a href="media.html"><i class="fa-solid fa-arrow-circle-left"></i><span> Back</span></a></li>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Files</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #87bba2;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #c9e4ca;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #3B6064;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #364958;
+            font-size: 18px;
+            display: block;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #3B6064;
+            padding: 15px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .logo a {
+            font-size: 32px;
+            color: #364958;
+            text-decoration: none;
+        }
+
+        
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-family: Georgia, serif;
+            color: #364958;
+        }
+        #reminder{
+            color: #364958;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .video {
+            background: #c9e4ca;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .video video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .video-info {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #3B6064;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">My Media</a>
+        </div>
+        <ul>
+            <li><a href="media.html"><i class="fa-solid fa-arrow-circle-left"></i> Back</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Film Trailers</h1>
+        <p id="reminder">Play videos manually and use fullscreen for better viewing.</p>
+
+        <div class="video-grid">
+            <div class="video">
+                <video src="Trailer/Haikyu!!.mp4" controls></video>
+                <div class="video-info">Haikyu!!</div>
+            </div>
+
+            <div class="video">
+                <video src="Trailer/Horimiya.mp4" controls></video>
+                <div class="video-info">Horimiya</div>
+            </div>
+
+            <div class="video">
+                <video src="Trailer/Classroom of the Elite.mp4" controls></video>
+                <div class="video-info">Classroom of the Elite</div>
+            </div>
+
+            <div class="video">
+                <video src="Trailer/Dragonball Super.mp4" controls></video>
+                <div class="video-info">Dragon Ball</div>
+            </div>
+
+            <div class="video">
+                <video src="Trailer/Solo Leveling.mp4" controls></video>
+                <div class="video-info">Solo Leveling</div>
+            </div>
+
+            <div class="video">
+                <video src="Trailer/Your Lie in April.mp4" controls></video>
+                <div class="video-info">Your Lie in April</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

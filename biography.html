@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Biography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 50px;
+    }
+    .buttons a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 150px;
+    }
+    .buttons a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    .biography{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .title h1{
+        text-align: center;
+        font-family: Georgia, serif;
+        color: #0A3658;
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .childhood{
+        padding: 20px 50px;
+        max-width: 100%;
+        background-color: #C9E4CA;
+        color: #364958;
+        box-shadow: 0 0 15px #55828B;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    .childhood h3{
+        font-family: Georgia, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .childhoodGallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .childhoodGallery img {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #87BBA2;
+        padding: 5px;
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+
+    .childhoodGallery img:hover {
+        width: 150px;
+        background-color: #55828B;
+        transform: scale(1.1);
+    }
+    .teenage{
+        margin-top: 50px;
+        padding: 20px 50px;
+        max-width: 100%;
+        background-color: #C9E4CA;
+        color: #364958;
+        box-shadow: 0 0 15px #55828B;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    .teenage h3{
+        font-family: Georgia, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .teenageGallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .teenageGallery img {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #87BBA2;
+        padding: 5px;
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+
+    .teenageGallery img:hover {
+        width: 150px;
+        background-color: #55828B;
+        transform: scale(1.1);
+    }
+
+    .college{
+        margin-top: 50px;
+        padding: 20px 50px;
+        max-width: 100%;
+        background-color: #C9E4CA;
+        color: #364958;
+        box-shadow: 0 0 15px #55828B;
+        border-radius: 5px;
+        text-align: justify;
+    }
+    .college h3{
+        font-family: Georgia, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .collegeGallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .collegeGallery img {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #87BBA2;
+        padding: 5px;
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+    .collegeGallery img:hover {
+        width: 150px;
+        background-color: #55828B;
+        transform: scale(1.1);
+    }
+    #gotopChildhood{
+        padding: 10px 10px;
+        background-color: #87BBA2;
+        color: #3B6064;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    #gotopChildhood:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">My Biography</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="biography">
+        <div class="title">
+            <h1 id="Title">From Asthma Attacks to Attack on Deadlines:<br>
+                My Life’s Unexpected Journey</h1>
+        </div>
+        <div class="buttons">
+            <a href="#childhood">My Childhood</a>
+            <a href="#teenage">My Teenage</a>
+            <a href="#college">My College</a>
+        </div>
+        <div class="childhood">
+            <h3 id="childhood">My Early childhood and Challenges</h3>
+            <div class="childhoodGallery">
+                <a href="Childhood1.jpg" target="display"><img src="Childhood1.jpg" alt="my first webcam picture" title="my first webcam picture"></a>
+                <a href="Childhood2.jpg" target="display"><img src="Childhood2.jpg" alt="my first school christmas party" title="my first school christmas party"></a>
+                <a href="Childhood3.jpg" target="display"><img src="Childhood3.jpg" alt="taken when I was 8 y/o" title="taken when I was 8 y/o"></a>
+                <a href="Childhood4.jpg" target="display"><img src="Childhood4.jpg" alt="my first visita iglesia" title="my first visita iglesia"></a>
+            </div>
+            <p>
+            <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Lebron Lee C. Setosta and I live in Tondo, Manila.<b><sup>1</sup></b> I was born on September 
+                23, 2005  at Jose R. Reyes Memorial Medical Center in Tondo, Manila but not long after 
+                I was born we moved to Binmaley, Pangasinan.<b><sup>2</sup></b> We moved because my parents 
+                separated and I moved with my mom along with my older sister.<b><sup>3</sup></b> I was raised in 
+                Binmaley, Pangasinan until I was 6 years old.<b><sup>4</sup></b> I spent half of my childhood in 
+                Pangasinan with my mom and my grandparents on my mother's side.<b><sup>5</sup></b> In those 6 years, 
+                I am so weak that most of the time I am sick.<b><sup>6</sup></b> I cannot play outside for long with other 
+                children because I have asthma and I cannot get too tired from playing.<b><sup>7</sup></b> I remember 
+                one day when I was playing more than usual.<b><sup>8</sup></b>  Later that day, I had a serious asthma 
+                attack, and I know my mom and grandparents were up all night, worried sick and 
+                making sure I was okay.<b><sup>9</sup></b> Living in the province without proper work and income was 
+                hard.<b><sup>10</sup></b> Our only income was from selling necessary daily things at the market, with a 
+                family where there are many members, that income was so little.<b><sup>11</sup></b> Although, living there 
+                was fun for a child with no knowledge about expenses but for the adults it was hard.<b><sup>12</sup></b> At 
+                that time my father was not supporting us financially at all, making it more difficult for 
+                my mom.<b><sup>13</sup></b> I also started my education that time and my sister is at High School.<b><sup>14</sup></b> I 
+                finished my kindergarten, preparatory and grade one in Pangasinan.<b><sup>15</sup></b> Since life was 
+                challenging in the province, my mom sought opportunities elsewhere to support my 
+                sister and me.<b><sup>16</sup></b> She decided to work overseas and applied for a job in Riyadh, Saudi 
+                Arabia.<b><sup>17</sup></b> 2012 was the year my mom went to Saudi Arabia. I was little then, and since I 
+                didn't know where she was going, I kind of felt like she'd just left and didn't love us 
+                anymore.<b><sup>18</sup></b> Around that time, we moved back to Manila, and I also met my father for the 
+                first time.<b><sup>19</sup></b> Since my mom was going to work abroad, they agreed that we would live 
+                with him.<b><sup>20</sup></b></blockquote>
+            </p><br>
+            <div style = "text-align: right;">
+            <a href="#Title" id="gotopChildhood">Go Top</a>
+            </div>
+        </div>
+        <div class="teenage">
+            <h3 id="teenage">My Teenage years and Growth</h3>
+            <div class="teenageGallery">
+                <a href="Teen1.jpg" target="display"><img src="Teen1.jpg" alt="my first webcam picture" title="my first webcam picture"></a>
+                <a href="Teen2.jpg" target="display"><img src="Teen2.jpg" alt="my first school christmas party" title="my first school christmas party"></a>
+                <a href="Teen3.jpg" target="display"><img src="Teen3.jpg" alt="taken when I was 8 y/o" title="taken when I was 8 y/o"></a>
+                <a href="Teen4.jpg" target="display"><img src="Teen4.jpg" alt="my first visita iglesia" title="my first visita iglesia"></a>
+            </div>
+            <p>
+                <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Years later, I learned that my mom didn't say goodbye because she knew I 
+                    wouldn't understand and would just cry and beg her to stay.<b><sup>1</sup></b> I was an early teen when I 
+                    saw my mom again.<b><sup>2</sup></b> It was after I graduated from my Elementary education.<b><sup>3</sup></b> My 
+                    teenage life is not as boring as my childhood.<b><sup>4</sup></b> I don’t get sick that much anymore, I 
+                    made a lot of new friends, met a lot of amazing people, fell in love, experienced 
+                    heartbreak and many new experiences that shaped the current me<b><sup>5</sup></b> I remember being 
+                    in seventh grade and experiencing that whole "first love" thing.<b><sup>6</sup></b> It began with just 
+                    admiring her from afar, but soon I was completely smitten.<b><sup>7</sup></b> Seeing her in the hallways 
+                    would make my heart race.<b><sup>8</sup></b> I tried to confess and pursue her but she rejected me, it 
+                    was my first rejection and also my first heartbreak.<b><sup>9</sup></b> Although she rejected me, my 
+                    feelings for her stayed, years have passed and I still admired her from afar.<b><sup>10</sup></b> In my 
+                    eighth grade days, my mind became more open, I started doing things for fun.<b><sup>11</sup></b> Doing 
+                    things such as joining school section competitions and joining intramural sports 
+                    competitions.<b><sup>12</sup></b> Eighth grade was also a big year for me – I made the top 10 for the first 
+                    time in high school.<b><sup>13</sup></b> I'd missed too much attendance in seventh grade to qualify, but I 
+                    was <em>determined</em> to do better.<b><sup>14</sup></b> I was proud of myself that time.<b><sup>15</sup></b> In my ninth grade I am 
+                    more active, because I want to do more things that I could be proud of, but before my 
+                    ninth grade ends.<b><sup>16</sup></b> Pandemic happened, during the pandemic a lot of things have 
+                    changed.<b><sup>17</sup></b> It feels like my teenage years were wasted during that time.<b><sup>18</sup></b> I graduated my 
+                    Junior High School online and to me it feels like not an achievement.<b><sup>19</sup></b> I enrolled as an 
+                    <abbr title="Information and Communications Technology">ICT</abbr> strand student, I started and ended my eleventh grade via online class, because of 
+                    the pandemic it feels like time skipped and made me a grade 12.<b><sup>20</sup></b> In my twelfth grade, 
+                    life is starting to go back to normal and I graduated my Senior High with Honors and 
+                    Best in Research Award.<b><sup>21</sup></b></blockquote>
+            </p><br>
+            <div style="text-align: right;">
+            <a href="#Title" id="gotopChildhood">Go Top</a>
+            </div>
+        </div>
+        <div class="college">
+            <h3 id="college">My College life and Aspirations</h3>
+            <div class="collegeGallery">
+                <a href="College1.jpg" target="display"><img src="College1.jpg" alt="my first webcam picture" title="my first webcam picture"></a>
+                <a href="College2.jpg" target="display"><img src="College2.jpg" alt="my first school christmas party" title="my first school christmas party"></a>
+                <a href="College3.jpg" target="display"><img src="College3.jpg" alt="taken when I was 8 y/o" title="taken when I was 8 y/o"></a>
+                <a href="College4.jpg" target="display"><img src="College4.jpg" alt="my first visita iglesia" title="my first visita iglesia"></a>
+            </div>
+            <p>
+                <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, I am in College.<b><sup>1</sup></b> I am studying at University of the East Manila, under the 
+                program of Bachelor of Science in Information Technology.<b><sup>2</sup></b> I am a second year student.<b><sup>3</sup></b> 
+                In my freshman year, I was anxious and scared in College life.<b><sup>4</sup></b> I am still not over with 
+                my SHS years.<b><sup>5</sup></b> I am still processing what happened during and after the pandemic.<b><sup>6</sup></b> To 
+                me it feels too fast that I cannot keep up with what is happening.<b><sup>7</sup></b> Though I am scared, 
+                I face the challenge and accept that I am at a college.<b><sup>8</sup></b> Thanks to the friends I made in 
+                my freshman year, the heaviness of my chosen program feels a little lighter.<b><sup>9</sup></b> The 
+                courses and subjects in my program are hard.<b><sup>10</sup></b> Especially when you cannot understand 
+                the lessons.<b><sup>11</sup></b> I need to study twice as hard to keep up with my blockmates.<b><sup>12</sup></b> Now I am in 
+                sophomore year, I could say that I am fully adapted to college life.<b><sup>13</sup></b> Though the subjects 
+                are much harder than my freshman year.<b><sup>14</sup></b> I think I could survive it and move into the 
+                next level.<b><sup>15</sup></b> The experiences that I gained during my freshman year helped me a lot.<b><sup>16</sup></b> The 
+                events that happen from time to time in school also helps me to enjoy my college life.<b><sup>17</sup></b> 
+                I'm really looking forward to graduation and imagining what I'll become.<b><sup>18</sup></b> Achieving my 
+                <strong>dreams</strong> would be the greatest accomplishment of my life.<b><sup>19</sup></b> My own motivation is what 
+                keeps me going.<b><sup>20</sup></b></blockquote>
+            </p><br>
+            <div style="text-align: right;">
+            <a href="#Title" id="gotopChildhood">Go Top</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

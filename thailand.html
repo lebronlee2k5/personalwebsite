@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Tahoma, sans-serif;
+    background-color: #87bba2;
+    }
+
+    .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color:#c9e4ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+    list-style: none;
+    }
+
+    .sidebar ul li {
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #364958;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+    background-color: #3B6064;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    }
+    .logo{
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px
+    }
+    .logo a{
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+    .thailand{
+        display: block;
+        padding: 0 50px;
+        margin: 50px 0;
+        text-align: justify;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .thailand h1{
+        font-size: 36px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+        margin-bottom: 30px;
+    }
+    .thailand h2{
+        font-size: 26px;
+        font-family: Georgia, Serif;
+        text-align: Center;
+        color: #0A3658;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        background: #c9e4ca;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+        overflow: hidden;
+    }
+
+    .gallery img {
+        border-radius: 15px;
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .gallery img:hover{
+        padding: 0 0;
+        transform: scale(1.1);
+        background-color: #87bba2;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .caption {
+        padding: 5px 5px 10px 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #364958;
+        text-align: justify;
+    }
+    .title{
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #364958;
+        text-align: center;
+    }
+    .direction{
+        padding: 5px 5px 20px 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #364958;
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Thailand</a>
+        </div>
+        <div class="navdiv">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="thailand">
+        <h1>Thailand Must Go Destinations</h1>
+        <h2>Bangkok</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Thailand/Wat Arun.jpg" target="image-frame">
+                    <img src="Thailand/Wat Arun.jpg" alt="Wat Arun"></a>
+                <p class="title">Wat Arun</p>
+                <p class="caption">This iconic temple, with its intricate porcelain-clad spires, offers stunning views of the Chao Phraya River, especially at sunset. I am drawn to its unique architectural style and historical significance, providing a glimpse into Thailand's rich cultural heritage.</p>
+                <p class="direction"><b>How to get there:</b><br> Take the Chao Phraya River Express boat to Tha Tien pier, then a short ferry crossing to Wat Arun. </p>
+            </div>
+        
+            <div class="gallery-item">
+                <a href="Thailand/Temple of the Emerald Buddha.jpg" target="image-frame">
+                    <img src="Thailand/Temple of the Emerald Buddha.jpg" alt="Temple of the Emerald Buddha"></a>
+                <p class="title">Temple of the Emerald Buddha</p>
+                <p class="caption">A must-see for first-time visitors, the Grand Palace showcases the opulence of Thai royalty and houses the revered Emerald Buddha. The complex's elaborate architecture and historical significance offer a deep dive into Thai history and art.</p>
+                <p class="direction"><b>How to get there:</b><br>Easily accessible by taxi or tuk-tuk. </p>
+            </div>
+
+            <div class="gallery-item">
+                <a href="Thailand/Chatuchak Weekend Market.jpg" target="image-frame">
+                    <img src="Thailand/Chatuchak Weekend Market.jpg" alt="Chatuchak Weekend Market"></a>
+                <p class="title">Chatuchak Weekend Market</p>
+                <p class="caption">One of the world's largest weekend markets, Chatuchak offers a vast array of goods, from clothing and handicrafts to food and pets. It's a shopping paradise and a cultural experience, attracting both locals and tourists seeking unique finds.</p>
+                <p class="direction"><b>How to get there:</b><br>Take the BTS Skytrain to Mo Chit station or the MRT subway to Chatuchak Park station.</p>
+            </div>
+        </div>
+        <h2>Chiang Mai</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Thailand/Doi Suthep.jpg" target="image-frame">
+                    <img src="Thailand/Doi Suthep.jpg" alt="Doi Suthep"></a>
+                <p class="title">Doi Suthep</p>
+                <p class="caption">Perched on a mountain overlooking Chiang Mai, Doi Suthep is a sacred temple with stunning views and a tranquil atmosphere. I am drawn to its golden chedi, intricate carvings, and spiritual significance.</p>
+                <p class="direction"><b>How to get there:</b><br>Take a taxi from Chiang Mai city.</p>
+            </div>
+            <div class="gallery-item">
+                <a href="Thailand/Elephant Sanctuaries.jpg" target="image-frame">
+                    <img src="Thailand/Elephant Sanctuaries.jpg" alt="Elephant Sanctuaries"></a>
+                <p class="title">Elephant Sanctuaries</p>
+                <p class="caption"> Ethical elephant sanctuaries offer visitors the chance to interact with these gentle giants in a responsible way.</p>
+                <p class="direction"><b>How to get there:</b><br>Many sanctuaries offer transportation from Chiang Mai city.</p>
+            </div>
+            <div class="gallery-item">
+                <a href="Thailand/Old City Temple.jpg" target="image-frame">
+                    <img src="Thailand/Old City Temple.jpg" alt="Wat Chedi Luang "></a>
+                <p class="title">Wat Chedi Luang</p>
+                <p class="caption">Wat Chedi Luang is a significant historical and architectural landmark in Chiang Mai's Old City. Its most striking feature is the large, partially ruined chedi, which once housed the Emerald Buddha.</p>
+                <p class="direction"><b>How to get there:</b><br>A Songthaews are a common and affordable mode of transportation in Chiang Mai. </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

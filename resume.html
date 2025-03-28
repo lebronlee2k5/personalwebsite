@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #87bba2;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color:#c9e4ca;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3B6064;
+    }
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #364958;
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+        transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #3B6064;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .logo {
+        font-family: Georgia, serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: 32px;
+        color: #364958 ;
+        text-decoration: none;
+    }
+
+    .content {
+        margin-left: 270px;
+        padding: 50px;
+    }
+
+    .profile-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #C9E4CA;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #55828B;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 3px;
+        background-color: #55828B;
+    }
+
+    .profile-pic:hover{
+        transform: scale(1.05);
+        background-color: #87bba2;
+    }
+
+    .general-info h2{
+        text-align: center;
+    }
+    .general-info p {
+        font-size: 16px;
+        color: #3B6064;
+    }
+
+    section {
+        margin-bottom: 20px;
+        background-color: #C9E4CA;
+        color: #364958;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #55828B;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #364958;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .skills-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .skills-list li {
+        background: #55828B;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .button a{
+        padding: 10px 10px;
+        background-color: #C9E4CA;
+        color: #3B6064;
+        font-weight: bold;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 10px;
+    }
+    .button a:hover{
+        background-color: #3B6064;
+        color: white;
+    }
+    </style>
+</head> 
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="#">Resume</a>
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li><a href="biography.html"><i class="fa-solid fa-book-atlas"></i>
+                <span>Biography</span></a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i>
+                <span>Skills</span></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image"></i>
+                <span>Gallery</span></a></li>
+            <li><a href="media.html"><i class="fa-solid fa-compact-disc"></i>
+                <span>Media</span></a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i>
+                <span>Resume</span></a></li>
+            <li><a href="dreamplaces.html"><i class="fa-solid fa-globe"></i>
+                <span> Dream Places</span></a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-ul"></i>
+                <span> Bucket List</span></a></li>
+            <li><a href="mailto:leb.carrillo@gmail.com" id="contact"><i class="fa-solid fa-envelope"></i>
+                <span> Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="profile-section">
+            <a href="1x1.jpg" target="display">
+                <img src="1x1.jpg" alt="My 1x1 Picture" class="profile-pic">
+            </a>
+            <div class="general-info">
+                <h2 id="genInfo">General Information</h2>
+                <p><strong>Name:</strong> Lebron Lee Carrillo Setosta</p>
+                <p><strong>Age:</strong> 19 Years Old</p>
+                <p><strong>Email:</strong> setosta.lebronlee@ue.edu.ph</p>
+                <p><strong>Contact Number:</strong> 09231424581</p>
+                <p><strong>Address:</strong> 844 Bucaneg St., Tondo, Manila</p>
+            </div>
+        </div>
+
+        <section id="aboutMe">
+            <h2>About Me</h2>
+            <p>I am Lebron Lee Setosta, a 2nd Year Information Technology student at the University of the East Manila Campus. 
+            My dream is to be financially independent to the point where I don't need to work and can fully enjoy life.</p>
+        </section>
+
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>IT professional seeking a position where I can apply my technical expertise to solve challenging problems.</p>
+        </section>
+
+        <section id="itSkills">
+            <h2>IT Skills</h2>
+            <ul class="skills-list">
+                <li>Proficient in Python and Java</li>
+                <li>Knowledgeable in HTML and CSS</li>
+                <li>Well-versed in Word Processing Applications</li>
+                <li>Hardware Troubleshooting</li>
+            </ul>
+        </section>
+
+        <section id="educ">
+            <h2>Educational Attainment</h2>
+            <p><strong>Elementary:</strong> Jose Rizal Elementary School</p>
+            <p><strong>High School:</strong> Florentino Torres High School (With Honors)</p>
+            <p><strong>Senior High School:</strong> Manila Cathedral School (With Honors)</p>
+            <p><strong>College:</strong> University of the East Manila</p>
+        </section>
+
+        <section id="exp">
+            <h2>Work Experience</h2>
+            <p><strong>Work Immersion:</strong> Techno Kids PH</p>
+        </section>
+
+        <section id="skill">
+            <h2>Soft Skills</h2>
+            <ul class="skills-list">
+                <li>Problem-Solving & Critical Thinking</li>
+                <li>Teamwork & Collaboration</li>
+                <li>Communication Skills</li>
+                <li>Adaptability & Willingness to Learn</li>
+            </ul>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>
+                I enjoy coding, web development, and learning about cybersecurity in my free time. 
+            Additionally, I have a passion for gaming, which help me stay creative. 
+            Outside of tech, I love playing billiards and exploring.
+            </p>
+        </section>
+        <div class="button" style="text-align: right;">
+            <a href="#genInfo" id="gotopChildhood">Go Top</a>
+        </div>
+    </div>
+
+</body>
+</html>
